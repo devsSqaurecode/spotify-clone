@@ -2,16 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-// import AuthModal from "@/components/AuthModal";
 // import SubscribeModal from "@/components/SubscribeModal";
 
-import { ProductWithPrice } from "@/types";
 import AuthModal from "@/components/AuthModal";
 import UploadModal from "@/components/UploadModal";
 
-interface ModalProviderProps {
-    products: ProductWithPrice[];
-}
 
 const ModalProvider = () => {
     const [isMounted, setIsMounted] = useState(false);
