@@ -4,6 +4,9 @@ import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
 import { usePathname } from "next/navigation";
+import Image from 'next/image';
+import LogoImage from "../public/images/logo.png";
+
 
 import { Song } from "@/types";
 import usePlayer from "@/hooks/usePlayer";
@@ -59,7 +62,11 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
         "
             >
                 <Box>
-                    <div className="flex flex-col gap-y-4 px-5 py-4">
+
+                    <div className="flex flex-col gap-y-4 px-5 py-4 items-center justify-center">
+                        <div className="mb-1">
+                            <Image src={LogoImage} alt="Logo" width={200} height={50} />
+                        </div>
                         {routes.map((item) => (
                             <SidebarItem key={item.label} {...item} />
                         ))}
