@@ -13,8 +13,8 @@ import Player from '@/components/Player'
 const font = Figtree({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Spotify Clone',
-  description: 'Spotify Clone',
+  title: 'Archangel Streaming',
+  description: 'Archangel Streaming',
 }
 
 export const revalidate = 0;
